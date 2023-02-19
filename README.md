@@ -1,2 +1,28 @@
-# CNN-classifier-for-EEG-Motor-imagery-spectrum-images
-The code requires the following libraries to be installed: Numpy, Tensorflow, OpenCV, Keras, Sklearn, Matplotlib, PIL. To run the code, specify the path to the input spectrum images folder in the "img_folder" variable. The code assumes the images are organized in sub-directories with the class label as the sub-directory name. The size of the input images is defined as IMG_HEIGHT = 32, IMG_WIDTH = 32. The code also sets the number of training epochs (n_epochs) to 300 and the batch size (n_batch) to 20. The code uses 10-fold cross-validation to train and evaluate the model, with the results stored in the "total_cnn_acc" list. The model will be saved in the current working directory as a .h5 file.
+This Python script creates, trains, and tests a Convolutional Neural Network (CNN) for image classification using various libraries like Numpy, Tensorflow, OpenCV, Keras, etc. The input images are spectrum images that are loaded from a specified folder path and pre-processed by resizing and normalizing.
+
+Prerequisites
+The following libraries and dependencies are required to run the script:
+
+Numpy
+Tensorflow
+OpenCV
+Keras
+matplotlib
+sklearn
+os
+sys
+matplotlib.image
+PIL
+How to use
+Ensure that the above-listed libraries are installed on your system.
+Download and save the script to your local machine.
+Open the script in a Python environment (e.g., Anaconda, Jupyter Notebook).
+Update the img_folder variable to reflect the path of the input spectrum images.
+Update the IMG_WIDTH and IMG_HEIGHT variables to reflect the required size of the input images.
+Update the subject variable to reflect the name of the subject for which the model is being built.
+Run the script.
+Output
+The script generates a CNN model for image classification based on the input spectrum images. The output includes the raw data and test data sizes, as well as the accuracy of the model for each fold.
+
+
+
